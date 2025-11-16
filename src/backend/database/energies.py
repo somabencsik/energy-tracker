@@ -41,7 +41,7 @@ def __get_engine():
 
 def __create_tables(engine) -> bool:
     insp = inspect(engine)
-    if insp == []:
+    if insp.get_table_names() == []:
         Base.metadata.create_all(engine)
         return True
     return False
