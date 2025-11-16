@@ -2,10 +2,16 @@ from fastapi import FastAPI
 
 from database import energies
 
-app = FastAPI()
 
-engine = energies.get_engine()
+energies.init_database()
+
+app = FastAPI()
 
 @app.get("/")
 async def get_root():
     return {"Hello": "World"}
+
+
+@app.get("/energies")
+async def get_energies():
+    return {"energies": energies.get_energies()}
