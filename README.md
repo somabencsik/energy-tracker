@@ -5,9 +5,9 @@
 2. [Installation](#Installation)
 
 ## What it is?
-A small webapp to track different energy prices.\n
-Able to view some technical indicators to see the price changes.\n
-Used api: [commoditypriceapi](https://commoditypriceapi.com/)\n
+A small webapp to track different energy prices.\
+Able to view some technical indicators to see the price changes.\
+Used api: [commoditypriceapi](https://commoditypriceapi.com/)\
 I use a free account, but have a lot of requests to spend, but please only use as much as you need.
 
 ## Installation
