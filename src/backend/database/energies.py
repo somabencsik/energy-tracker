@@ -95,3 +95,17 @@ def get_energies() -> list[Symbol]:
     engine = __get_engine()
     session = sessionmaker(bind=engine)()
     return session.query(Symbol).all()
+
+
+def get_energies_from_to(symbol: str, start_date: str, end_date: str):
+    response = __query(
+        "/rates/time-series",
+        symbols=symbol,
+        startDate=start_date,
+        endDate=end_date
+    )
+
+    if response == {}:
+        return
+
+    return response["rates"]

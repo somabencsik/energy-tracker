@@ -15,3 +15,8 @@ async def get_root():
 @app.get("/energies")
 async def get_energies():
     return {"energies": energies.get_energies()}
+
+
+@app.get("/energies/time")
+async def get_energies_time(symbol: str, start_date: str, end_date: str):
+    return {"rates": energies.get_energies_from_to(symbol, start_date, end_date)}
