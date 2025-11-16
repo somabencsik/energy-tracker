@@ -1,10 +1,10 @@
 # Energy prices tracker
 
 ## Table of contents
-1. [What it is](#What it is)
+1. [What-it-is?](#What-it-is?)
 2. [Installation](#Installation)
 
-## What it is
+## What it is?
 A small webapp to track different energy prices.\n
 Able to view some technical indicators to see the price changes.\n
 Used api: [commoditypriceapi](https://commoditypriceapi.com/)\n
